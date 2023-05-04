@@ -1,48 +1,57 @@
-import { FormEvent, useRef } from "react";
-import "./styles.scss";
+import "./styles.css";
 
-const Form = () => {
-  const emailElement = useRef<HTMLInputElement>(null);
-  const passwordElement = useRef<HTMLInputElement>(null);
 
-  const handleSubmitForm = (e: FormEvent) => {
-    e.preventDefault();
-    console.log("button form clicked");
-    console.log(emailElement.current?.value);
-    console.log(passwordElement.current?.value);
-  };
 
-  return (
-    <div className="App">
-      <h1>Demo formulaire</h1>
-      {/*<form onSubmit={(e) =>{handleSubmitForm(e)}}>*/}
-      <form className="w-50 m-auto" onSubmit={handleSubmitForm}>
-        <div className="form-floating mb-3">
-          <input
-            type="email"
-            className="form-control"
-            id="emailUser"
-            placeholder="name@example.com"
-            ref={emailElement}
-          />
-          <label htmlFor="emailUser">Email</label>
-        </div>
-        <div className="form-floating">
-          <input
-            type="password"
-            className="form-control"
-            id="passwordUser"
-            placeholder="Password"
-            ref={passwordElement}
-          />
-          <label htmlFor="passwordUser">Mot de passe</label>
-        </div>
-        <button className="mt-3 btn btn-primary" type="submit">
-          Se connecter
-        </button>
-      </form>
+ export default function Form () {
+  
+
+     return (
+      
+    <div className="container">
+     <form className="row g-3">
+  <div className="col-md-6">
+    <label htmlFor="inputEmail4" className="form-label">Email</label>
+    <input type="email" className="form-control" id="inputEmail4"/>
+  </div>
+  <div className="col-md-6">
+    <label htmlFor="inputPassword4" className="form-label">Password</label>
+    <input type="password" className="form-control" id="inputPassword4"/>
+  </div>
+  <div className="col-12">
+    <label htmlFor="inputAddress" className="form-label">Address</label>
+    <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
+  </div>
+  <div className="col-12">
+    <label htmlFor="inputAddress2" className="form-label">Address 2</label>
+    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+  </div>
+  <div className="col-md-6">
+    <label htmlFor="inputCity" className="form-label">City</label>
+    <input type="text" className="form-control" id="inputCity"/>
+  </div>
+  <div className="col-md-4">
+    <label htmlFor="inputState" className="form-label">State</label>
+    <select id="inputState" className="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div className="col-md-2">
+    <label htmlFor="inputZip" className="form-label">Zip</label>
+    <input type="text" className="form-control" id="inputZip"/>
+  </div>
+  <div className="col-12">
+    <div className="form-check">
+      <input className="form-check-input" type="checkbox" id="gridCheck"/>
+      <label className="form-check-label" htmlFor="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div className="col-12">
+    <button type="submit" className="btn btn-primary">Sign in</button>
+  </div>
+</form>
     </div>
   );
 };
-
-export default Form;
