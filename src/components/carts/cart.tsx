@@ -1,26 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import "./cart.css";
 import { Link } from 'react-router-dom';
-import { TProducts } from '../../types/TProducts';
-import { useDispatch, useSelector } from 'react-redux';
+import { TProduct } from '../../types/Tproduct';
 
 
 
 
 type TProps = {
-    product: TProducts;
-    delItem: (item: TProducts) => void;
+    product: TProduct;
+    delItem: (item: TProduct) => void;
 }
 
 export default function Cart() {
 
   
     const [totalPrice, setTotalPrice] = useState()
-    const state = useSelector((state: { addItem: any; }) => state.addItem)
-    const dispatch = useDispatch()
 
     const handleClose = (item: any) => {
-        dispatch(delItem(item))
     }
 
 
@@ -69,9 +65,10 @@ export default function Cart() {
 
     return (
         <>
+           {/*  <p>{state.lenght } test</p>
             {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
-            {state.length !== 0 && button()}
+            {state.length !== 0 && button()} */}
         </>
     );
 

@@ -6,7 +6,7 @@ export default function Footer() {
 
     <>
 
-      <footer className=" card text-center text-info text-truncate" >
+      <footer className=" text-center text-info text-truncate" >
 
 
         <Link to="contact" className="btn fs-5 fw-semibold text-info "> Contactez-nous </Link>

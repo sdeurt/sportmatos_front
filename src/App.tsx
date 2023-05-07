@@ -33,13 +33,13 @@ export default function App() {
 
           <Route path="footer" element={<Footer />} />
 
-          
-            <Route path="apropos" element={<Apropos />} />
-            <Route path="contact" element={<Contact />} />
 
-          
+          <Route path="apropos" element={<Apropos />} />
+          <Route path="contact" element={<Contact />} />
+
+
           <Route path="*" element={<NotFound />} />
-          <Route path="accueil" element={<Accueil />} /> 
+          <Route path="accueil" element={<Accueil />} />
         </Routes>
         <Footer />
 

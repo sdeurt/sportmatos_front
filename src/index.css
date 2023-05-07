@@ -18,7 +18,7 @@ code {
 
 
 footer {
-  background-color: black;
+  background-color:black;
   text-decoration-color: white;
   text-align:center;
   text-indent: inherit;
@@ -37,12 +37,12 @@ footer {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Product */
-.card:hover {
+* {
   transition: all 0.5s ease;
 }
 

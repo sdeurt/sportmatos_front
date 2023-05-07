@@ -1,6 +1,6 @@
 import { TCart } from "./TCart";
 import { TOrder } from "./TOrder";
-import { TProducts } from "./TProducts";
+import { TProduct } from "./Tproduct";
 
 
 export type TUser<TData = any> = {
@@ -19,7 +19,7 @@ export type TUser<TData = any> = {
 
     admin: boolean;
 
-    products: TProducts [];
+    products: TProduct [];
 
     orders: TOrder [];
 

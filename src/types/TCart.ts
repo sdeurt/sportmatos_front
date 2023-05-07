@@ -1,13 +1,17 @@
+import { TProduct } from "./Tproduct";
 
 
-export type TCart <TData = any> = {
+export type TCart = {
     
     id: number;
-    name: string;
-    quantity: number;
-    price: number;
-    productId: any; 
+
     userId: number;
+
+    totalPrice: number;
+
+    cartItems: TProduct;
+
+    date: Date; 
 
 
 }
