@@ -15,7 +15,7 @@ export default function NavBar() {
 
 
 
-        <img src="img-accueil/logo2.jpg" alt="logo " width="100" height="70" className="mx-2 ms-0 logo rounded" onClick={() => navigate("/accueil")} />
+        <img src="img-accueil/logo3.jpg" alt="logo " width="100" height="70" className="mx-2 ms-0 logo rounded" onClick={() => navigate("/")} />
 
         <a className="navbar-brand btn fs-3 fw-semibold text-primary" href="#" onClick={() => navigate("/apropos")}> HexEco  </a>
 

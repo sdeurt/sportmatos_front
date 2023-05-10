@@ -24,12 +24,14 @@ export default function App() {
         <NavBar />
 
         <Routes>
+          
           {/**/}
+          
           <Route path="products" element={<Products />} />
           <Route path="categories" element={<Categories />} />
           <Route path="login" element={< Login />} />
           <Route path="panier" element={<Cart />} />
-
+          <Route path="/" element={<Accueil />} />
 
           <Route path="footer" element={<Footer />} />
 
@@ -38,8 +40,11 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
 
 
+          
+        
           <Route path="*" element={<NotFound />} />
-          <Route path="accueil" element={<Accueil />} />
+          
+
         </Routes>
         <Footer />
 
