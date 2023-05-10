@@ -45,14 +45,14 @@ export function Products() {
 
     );
 
-    const myData = products.map((product, category) => ({ ...product, category }));
+   /*  const myData = products.map((product, category) => ({ ...product, category }));
     const [filteredData, setFilteredData] = useState(myData);
 
     function filterData(e: React.KeyboardEvent<HTMLInputElement>) {
         const q = (e.target as HTMLInputElement).value.toLowerCase();
         const filteredRecords = myData.filter(item => item.name.toLowerCase().includes(q));
         setFilteredData(filteredRecords);
-    }
+    } */
 
 
 
@@ -66,10 +66,10 @@ export function Products() {
                 {product.id === 0 && <div className=" p-2 m-1 d-xs-flex ">
 
                     <div className="container shadow-sm border-primary">
-                        <div className="search_box  w-50  m-auto  row p-2 d-xs-flex ">
+                       {/*  <div className="search_box  w-50  m-auto  row p-2 d-xs-flex ">
                             <input type="text" onKeyUp={filterData} className="searchCtrl rounded " placeholder="Search the list " />
-                        </div>
-                        <div className="box text-info text-center">
+                        </div> */}
+                       {/*  <div className="box text-info text-center">
                             {filteredData && filteredData.length > 0 ? (
                                 <ul className="list text-info">
                                     {filteredData.map((item,index) =>
@@ -78,7 +78,7 @@ export function Products() {
                                 </ul>
                             ) : <div className="message"></div>
                             }
-                        </div>
+                        </div> */}
                         <div className="row" >{selectProduct}</div>
                     </div>
                 </div>}
