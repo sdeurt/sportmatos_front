@@ -25,7 +25,7 @@ export default function Category() {
     const selectCategory = category.map((item, i) =>
     <div className="col-12 col-sm-4 col-md-3 p-2">
         <div className="card p-1 shadow-sm border-primary">
-            <img src={`./imgsport/${item.name}.jpg`} width='auto' height='100px' className="card-img-top img-product" alt="..." onClick={() => setProduct(item)}/>
+            <img src={`./imgsport/${item.name}.jpg`} width='auto' height='100px' className="card-img-top img-product text-light" alt={item.name} onClick={() => setProduct(item)}/>
             <hr />
                 <div className="card-body ">
                     

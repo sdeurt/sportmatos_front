@@ -18,15 +18,13 @@ import NotFound from './components/notFound/not_found';
 
 export default function App() {
   return (
-    <div className='App'>
+    <div className='App d-flex flex-column justify-content-between'>
       <BrowserRouter>
 
         <NavBar />
 
         <Routes>
-          
           {/**/}
-          
           <Route path="products" element={<Products />} />
           <Route path="categories" element={<Categories />} />
           <Route path="login" element={< Login />} />
@@ -35,15 +33,10 @@ export default function App() {
 
           <Route path="footer" element={<Footer />} />
 
-
           <Route path="apropos" element={<Apropos />} />
           <Route path="contact" element={<Contact />} />
 
-
-          
-        
           <Route path="*" element={<NotFound />} />
-          
 
         </Routes>
         <Footer />
