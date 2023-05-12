@@ -24,19 +24,23 @@ export default function Accueil() {
 
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={`./imgsport/row-kettlebell-girya-weights-gym.jpg`} className="d-block w-100" alt="boxjump" height="500px" onClick={() => navigate("/products")}/>
+            <h1 className="text-info text-center"> Bienvenue </h1>
+              <img src={`./imgsport/row-kettlebell-girya-weights-gym.jpg`} className="d-block w-100 mx-auto" alt="boxjump" height="500px" onClick={() => navigate("/products")}/>
             </div>
 
             <div className="carousel-item">
-              <img src={`./imgsport/Ensemble-crossfit.jpg`} className="d-block w-100" alt="crossfit" height="500px"  onClick={() => navigate("/products")}/>
+              <h1 className="text-info text-center"> Bienvenue </h1>
+              <img src={`./imgsport/Ensemble-crossfit.jpg`} className="d-block w-100 mx-auto" alt="crossfit" height="500px"  onClick={() => navigate("/products")}/>
             </div>
 
             <div className="carousel-item">
-              <img src={`./imgsport/Dumbbell-and-weight-plates.jpg`} className="d-block w-100" alt="poids" height="500px" onClick={() => navigate("/products")} />
+            <h1 className="text-info text-center"> Bienvenue </h1>
+              <img src={`./imgsport/Dumbbell-and-weight-plates.jpg`} className="d-block w-100 mx-auto" alt="poids" height="500px" onClick={() => navigate("/products")} />
             </div>
 
             <div className="carousel-item">
-              <img src={`./imgsport/set-sports-equipment-fitness-ball.jpg`} className="d-block w-100" alt="poids" height="500px" onClick={() => navigate("/products")} />
+            <h1 className="text-info text-center"> Bienvenue </h1>
+              <img src={`./imgsport/set-sports-equipment-fitness-ball.jpg`} className="d-block w-100 mx-auto" alt="poids" height="500px" onClick={() => navigate("/products")} />
             </div>
 
           </div>
